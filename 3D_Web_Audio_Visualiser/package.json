@@ -1,0 +1,24 @@
+{
+  "name": "coming_soon",
+  "version": "1.0.0",
+  "description": "A coming soon page for my portfolio",
+  "main": "js/src/app.js",
+  "scripts": {
+    "serve": "http-server",
+    "watch": "watchify js/src/app.js -o dist/bundle.js -v",
+    "build_no_min": "browserify -t glslify js/src/app.js -o dist/bundle.js",
+    "build": "browserify js/src/app.js | uglifyjs -mc warnings=false > dist/bundle.min.js",
+    "minicss": "uglifycss src/css/sono.css > dist/css/bundle.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "glslify": "^5.1.0",
+    "jquery": "^3.0.0",
+    "jshint": "^2.9.3",
+    "uglify-js": "^2.6.4",
+    "uglifycss": "0.0.20",
+    "watchify": "^3.7.0"
+  }
+}
