@@ -1,8 +1,8 @@
 # Intro to Computational Media (Fall 2016)
 This repo holds the assignments handed for Intro to Computational Media in ITP, NYU during the Fall semester of 2016.
 
-1. [Modo](https://juniorxsound.github.io/Flow/)
-2. [Flow](https://juniorxsound.github.io/Flow/)
+1. [Modo](https://github.com/juniorxsound/ICM-Fall-2016-/tree/master/Modo)
+2. [Flow](https://github.com/juniorxsound/ICM-Fall-2016-/tree/master/Flow)
 3. [3D Web Audio Visualiser](https://juniorxsound.github.io/Flow/)
 4. [5 Tones of Emotion](https://juniorxsound.github.io/Flow/)
 5. More Stuff Coming Soon
