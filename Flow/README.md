@@ -1,8 +1,8 @@
 # Flow
 Flow is a generative drawing application that uses the microphone to control the brush pattern.
 
-[Demo](https://juniorxsound.github.io/Flow/)
-![alt text](https://github.com/juniorxsound/Flow/blob/master/assets/screenshot.png "Flow Screenshot")
+[Demo](https://juniorxsound.github.io/ICM-Fall-2016/Flow/)
+![alt text](https://github.com/juniorxsound/ICM-Fall-2016/blob/master/Flow/assets/screenshot.png "Flow Screenshot")
 Flow was built using:
 
 1. [p5.js](https://github.com/processing/p5.js) - a JS client-side library for creating graphic and interactive experiences
