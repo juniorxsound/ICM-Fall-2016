@@ -1,7 +1,7 @@
 # Modo
 Modo is a drawing application that uses the microphone to morph the brush pattern.
 
-[Demo](https://juniorxsound.github.io/Modo/)
+[Demo](https://juniorxsound.github.io/ICM-Fall-2016/Modo/)
 ![alt text](https://github.com/juniorxsound/Modo/blob/master/assets/Screen%20Shot%202016-09-30%20at%2013.33.22.png "Flow Screenshot")
 Modo was built using:
 
