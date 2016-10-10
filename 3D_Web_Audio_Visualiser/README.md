@@ -3,7 +3,7 @@ A web audio visualiser built using Three.js, Web Audio API & dat.GUI.
 
 [Demo](https://juniorxsound.github.io/Flow/)
 
-![Screenshot](https://github.com/juniorxsound/ICM-Fall-2016-/blob/master/5_Tones_of_Emotion/assets/screen.png "5 Tones of Emotion")
+![Screenshot](https://github.com/juniorxsound/ICM-Fall-2016-/blob/master/3D_Web_Audio_Visualiser/assets/screen.png "3D Web Audio Visualiser")
 
 Music made and owned by Marco Guarino.
 
