@@ -1,0 +1,20 @@
+{
+  "name": "5tonesofemotion",
+  "version": "1.0.0",
+  "description": "A self exploration of emotion in color",
+  "main": "index.html",
+  "scripts": {
+    "serve": "http-server",
+    "watch": "watchify src/js/app.js -o dist/bundle.js -v",
+    "build": "browserify src/js/app.js  | uglifyjs -mc warnings=false > dist/bundle.min.js"
+  },
+  "author": "Or Fleisher",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "jquery": "^3.1.1",
+    "node-vibrant": "^2.1.2",
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.7.0"
+  }
+}

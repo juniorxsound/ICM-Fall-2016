@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5 Tones of Emotion</title>
+  </head>
+
+  <style>
+  body{
+    overflow: hidden;
+    margin: auto;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+  #landing-screen{
+    position: absolute;
+    width: 100%; height: 100%;
+  }
+  #videobg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  #begin-button{
+    position: absolute;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border: 1px solid #000000;
+    padding: 10px;
+    padding-left: 15px; padding-right: 15px;
+  }
+  #begin-button:hover{
+    color: #ffffff;
+    background-color: #000000;
+  }
+  .swatch{
+    display: inline-flex;
+    width: 50px; height: 50px;
+    background-color: #000;
+    opacity: 0.3;
+  }
+  #colors{
+    position: absolute;
+    left: 0; bottom: -50px;
+  }
+  img{
+    display: inline-flex;
+  }
+  </style>
+
+  <!--GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+  <!--LIB-->
+  <!--script src="lib/p5.min.js"></script-->
+  <!--script src="lib/p5.sound.min.js"></script-->
+  <!--script src="lib/p5.dom.min.js"></script-->
+
+  <body>
+    <div id="landing-screen">
+      <video id="videobg" autoplay loop>
+        <source src="assets/intro.webm" type="video/webm" />
+      </video>
+      <div id="begin-button">BEGIN</div>
+    </div>
+    <!--COLOR SWATCH-->
+    <div id="colors">
+    <span id="one" class="swatch colorVibrant"></span>
+    <span id="two" class="swatch colorMuted"></span>
+    <span id="three" class="swatch colorDarkVibrant"></span>
+    <span id="four" class="swatch colorDarkMuted"></span>
+    <span id="five" class="swatch colorLightVibrant"></span>
+    </div>
+
+    <script src="dist/bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "Modo",
+  "version": "1.0.0",
+  "description": "Modo is a drawing application that uses your microphone to morph the brush pattern",
+  "main": "index.html",
+  "scripts": {
+    "serve": "http-server",
+    "watch": "watchify src/js/src/app.js -o dist/bundle.js -v",
+    "build": "browserify src/js/src/app.js  | uglifyjs -mc warnings=false > dist/bundle.min.js",
+    "minicss": "uglifycss src/css/app.css > dist/bundle.min.css"
+  },
+  "author": "Or Fleisher",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "uglifycss": "0.0.21",
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.7.0"
+  }
+}
