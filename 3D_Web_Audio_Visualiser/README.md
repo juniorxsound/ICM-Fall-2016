@@ -1,7 +1,7 @@
 # 3D Web Audio Visualiser
 A web audio visualiser built using Three.js, Web Audio API & dat.GUI.
 
-[Demo](https://juniorxsound.github.io/Flow/)
+[Demo](https://juniorxsound.github.io/ICM-Fall-2016/3D_Web_Audio_Visualiser/)
 
 ![Screenshot](https://github.com/juniorxsound/ICM-Fall-2016-/blob/master/3D_Web_Audio_Visualiser/assets/screen.png "3D Web Audio Visualiser")
 
