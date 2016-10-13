@@ -1,14 +1,15 @@
-# Flow
-Flow is a generative drawing application that uses the microphone to control the brush pattern.
+# leapo
+leapo helps you choose music with your hands by using a leap motion controller.
 
-[Demo](https://juniorxsound.github.io/ICM-Fall-2016/Flow/)
-![alt text](https://github.com/juniorxsound/ICM-Fall-2016/blob/master/Flow/assets/screenshot.png "Flow Screenshot")
+[Demo](https://juniorxsound.github.io/ICM-Fall-2016/leapo/)
+![alt text](https://github.com/juniorxsound/ICM-Fall-2016/blob/master/leapo/assets/screenshot.png "leapo Screenshot")
 Flow was built using:
 
 1. [p5.js](https://github.com/processing/p5.js) - a JS client-side library for creating graphic and interactive experiences
-2. [p5.sound.js](https://github.com/processing/p5.js-sound) - p5.sound brings the Processing approach to Web Audio and p5.js
-3. [dat.GUI](https://github.com/dataarts/dat.gui) - a lightweight controller library for JavaScript
+2. [leap.js](https://github.com/leapmotion/leapjs) - JavaScript client for the Leap Motion Controller
+3. [LeapTrainer.js](https://github.com/roboleary/LeapTrainer.js) - Gesture and pose learning and recognition for the Leap Motion
+4. [SoundCloud API](https://developers.soundcloud.com/docs/api/guide)
 
-> Flow was built as a part of ICM class @ ITP, NYU lectured by Daniel Shiffman. 
+> leapo was built as a part of ICM class @ ITP, NYU lectured by Daniel Shiffman. 
 
-Written by Jingfei Lin and Or Fleisher. 
+Written by Or Fleisher. 
