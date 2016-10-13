@@ -1,12 +1,14 @@
-# Intro to Computational Media (Fall 2016)
-This repo holds the assignments handed for Intro to Computational Media in ITP, NYU during the Fall semester of 2016.
+# Flow
+Flow is a generative drawing application that uses the microphone to control the brush pattern.
 
-1. [Modo](https://github.com/juniorxsound/ICM-Fall-2016-/tree/master/Modo)
-2. [Flow](https://github.com/juniorxsound/ICM-Fall-2016-/tree/master/Flow)
-3. [3D Web Audio Visualiser](https://github.com/juniorxsound/ICM-Fall-2016-/tree/master/3D_Web_Audio_Visualiser)
-4. [5 Tones of Emotion](https://github.com/juniorxsound/ICM-Fall-2016-/tree/master/5_Tones_of_Emotion)
-5. More Stuff Coming Soon
+[Demo](https://juniorxsound.github.io/ICM-Fall-2016/Flow/)
+![alt text](https://github.com/juniorxsound/ICM-Fall-2016/blob/master/Flow/assets/screenshot.png "Flow Screenshot")
+Flow was built using:
 
-![ITP](https://github.com/juniorxsound/ICM-Fall-2016-/blob/master/assets/itp_logo.png "ITP Logo")
+1. [p5.js](https://github.com/processing/p5.js) - a JS client-side library for creating graphic and interactive experiences
+2. [p5.sound.js](https://github.com/processing/p5.js-sound) - p5.sound brings the Processing approach to Web Audio and p5.js
+3. [dat.GUI](https://github.com/dataarts/dat.gui) - a lightweight controller library for JavaScript
 
-> Built as a part of ICM class @ ITP, NYU lectured by Daniel Shiffman.
+> Flow was built as a part of ICM class @ ITP, NYU lectured by Daniel Shiffman. 
+
+Written by Jingfei Lin and Or Fleisher. 
