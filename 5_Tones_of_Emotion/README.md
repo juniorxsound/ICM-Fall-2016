@@ -1,8 +1,9 @@
 # 5 Tones of Emotion
 A small app that analyses color data from a library of images shared between my and my girlfriend who lives abroad.
-[Demo](https://juniorxsound.github.io/Flow/)
 
-![Screenshot](https://github.com/juniorxsound/ICM-Fall-2016-/blob/master/5_Tones_of_Emotion/assets/screen.png "5 Tones of Emotion")
+[Demo](https://juniorxsound.github.io/ICM-Fall-2016/5_Tones_of_Emotion/)
+
+![Screenshot](https://github.com/juniorxsound/ICM-Fall-2016/blob/master/5_Tones_of_Emotion/assets/header.gif "5 Tones of Emotion")
 
 Libraries used:
 
