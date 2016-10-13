@@ -1,9 +1,11 @@
 # leapo
 leapo helps you choose music with your hands by using a leap motion controller.
 
+>Currently under work and not functioning entirely
+
 [Demo](https://juniorxsound.github.io/ICM-Fall-2016/leapo/)
 ![alt text](https://github.com/juniorxsound/ICM-Fall-2016/blob/master/leapo/assets/screenshot.png "leapo Screenshot")
-Flow was built using:
+leapo is built using:
 
 1. [p5.js](https://github.com/processing/p5.js) - a JS client-side library for creating graphic and interactive experiences
 2. [leap.js](https://github.com/leapmotion/leapjs) - JavaScript client for the Leap Motion Controller
