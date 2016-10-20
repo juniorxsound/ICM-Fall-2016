@@ -1,5 +1,5 @@
 # Intro to Computational Media (Fall 2016)
-This repo holds the assignments handed for Intro to Computational Media in ITP, NYU during the Fall semester of 2016.
+This repo holds the assignments handed for [Intro to Computational Media](https://github.com/ITPNYU/ICM-2016) in ITP, NYU during the Fall semester of 2016.
 
 1. [Modo](https://github.com/juniorxsound/ICM-Fall-2016-/tree/master/Modo)
 2. [Flow](https://github.com/juniorxsound/ICM-Fall-2016-/tree/master/Flow)
@@ -10,7 +10,5 @@ This repo holds the assignments handed for Intro to Computational Media in ITP, 
 7. More Stuff Coming Soon
 
 ![ITP](https://github.com/juniorxsound/ICM-Fall-2016-/blob/master/assets/itp_logo.png "ITP Logo")
-
-[Course repo](https://github.com/ITPNYU/ICM-2016)
 
 > Built as a part of ICM class @ ITP, NYU lectured by Daniel Shiffman.
