@@ -11,4 +11,6 @@ This repo holds the assignments handed for Intro to Computational Media in ITP, 
 
 ![ITP](https://github.com/juniorxsound/ICM-Fall-2016-/blob/master/assets/itp_logo.png "ITP Logo")
 
+[Course repo](https://github.com/ITPNYU/ICM-2016)
+
 > Built as a part of ICM class @ ITP, NYU lectured by Daniel Shiffman.
