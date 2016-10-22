@@ -32,21 +32,47 @@ f3.add(params, 'camrotz', 0.0, 1.0);
 f3.add(params, 'world_rot', 10000, 100000);
 
 //Web Audio Stuff//
+
+ /* For loading a song
 var audio = new Audio();
 audio.src = 'marco.mp3';
 audio.controls = true;
 document.body.appendChild(audio);
+*/
 
 var context = new AudioContext();
 var analyser = context.createAnalyser();
 freqByteData = new Uint8Array(analyser.frequencyBinCount);
+
+// success callback when requesting audio input stream
+function successCallback(stream) {
+    //var audioContext = new webkitAudioContext();
+
+    // Create an AudioNode from the stream.
+    var mediaStreamSource = context.createMediaStreamSource( stream );
+
+    mediaStreamSource.connect(analyser);
+
+}
+
+function errorCallback() {
+    console.log("The following error occurred: ");
+}
+
+navigator.webkitGetUserMedia( {audio:true}, successCallback, errorCallback );
+navigator.getUserMedia( {audio:true}, successCallback, errorCallback );
+
+
+
+/*
 window.addEventListener('load', function(e) {
   // Our <audio> element will be the audio source.
-  var source = context.createMediaElementSource(audio);
-  source.connect(analyser);
+  //var source = context.createMediaElementSource(mic);
+  mic.connect(analyser);
   analyser.connect(context.destination);
-  audio.play();
+  //audio.play();
 }, false);
+*/
 
 //Threejs Scene//
 var container, renderer, scene, camera, mesh, fov = 80;

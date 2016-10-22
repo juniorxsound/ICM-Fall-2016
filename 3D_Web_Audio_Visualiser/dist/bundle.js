@@ -1,14 +1,16 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
+/*
+var glslify = require('glslify');
 
 var shader_location = './assets/shaders';
 
-var frag_gl = require(shader_location + '/frag.glsl');
-var vert_gl = require(shader_location + '/vert.glsl');
+var frag_gl = glslify(shader_location + '/frag.glsl');
+var vert_gl = glslify(shader_location + '/vert.glsl');
 
 console.log(frag_gl);
 console.log(vert_gl);
-
+*/
 //DAT GUI//
 var gui = new dat.GUI();
 
@@ -31,27 +33,47 @@ f3.add(params, 'camrotz', 0.0, 1.0);
 f3.add(params, 'world_rot', 10000, 100000);
 
 //Web Audio Stuff//
-window.AudioContext = window.AudioContext ||
-                      window.webkitAudioContext;
+
+ /* For loading a song
+var audio = new Audio();
+audio.src = 'marco.mp3';
+audio.controls = true;
+document.body.appendChild(audio);
+*/
 
 var context = new AudioContext();
 var analyser = context.createAnalyser();
 freqByteData = new Uint8Array(analyser.frequencyBinCount);
 
-var errorCallback = function(e) {
-   console.log('Reeeejected!', e);
- };
+// success callback when requesting audio input stream
+function successCallback(stream) {
+    //var audioContext = new webkitAudioContext();
+
+    // Create an AudioNode from the stream.
+    var mediaStreamSource = context.createMediaStreamSource( stream );
+
+    mediaStreamSource.connect(analyser);
+
+}
+
+function errorCallback() {
+    console.log("The following error occurred: ");
+}
+
+navigator.webkitGetUserMedia( {audio:true}, successCallback, errorCallback );
+navigator.getUserMedia( {audio:true}, successCallback, errorCallback );
 
 
-navigator.mediaDevices.getUserMedia({audio: true}, function(stream) {
-  var microphone = context.createMediaStreamSource(stream);
 
-  // microphone -> filter -> destination.
-  microphone.connect(analyser);
+/*
+window.addEventListener('load', function(e) {
+  // Our <audio> element will be the audio source.
+  //var source = context.createMediaElementSource(mic);
+  mic.connect(analyser);
   analyser.connect(context.destination);
-
-}, errorCallback);
-
+  //audio.play();
+}, false);
+*/
 
 //Threejs Scene//
 var container, renderer, scene, camera, mesh, fov = 80;
