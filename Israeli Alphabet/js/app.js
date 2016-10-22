@@ -1,6 +1,6 @@
-var $ = require("jquery");
+global.$ = require("jquery");
 
-
+$(function(){
 $(document).ready(function() {
   console.log('app initialised');
   $('.splash_text_en').delay(2500).fadeOut(250);
@@ -478,4 +478,5 @@ $(document).ready(function() {
         }
     });
 
+});
 });
