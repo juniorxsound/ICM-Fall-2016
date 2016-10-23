@@ -1,14 +1,16 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 
+/*
+var glslify = require('glslify');
 
 var shader_location = './assets/shaders';
 
-var frag_gl = require(shader_location + '/frag.glsl');
-var vert_gl = require(shader_location + '/vert.glsl');
+var frag_gl = glslify(shader_location + '/frag.glsl');
+var vert_gl = glslify(shader_location + '/vert.glsl');
 
 console.log(frag_gl);
 console.log(vert_gl);
-
+*/
 //DAT GUI//
 var gui = new dat.GUI();
 
@@ -31,8 +33,12 @@ f3.add(params, 'camrotz', 0.0, 1.0);
 f3.add(params, 'world_rot', 10000, 100000);
 
 //Web Audio Stuff//
-window.AudioContext = window.AudioContext ||
-                      window.webkitAudioContext;
+/*
+var audio = new Audio();
+audio.src = 'marco.mp3';
+audio.controls = true;
+document.body.appendChild(audio);
+*/
 
 var context = new AudioContext();
 var analyser = context.createAnalyser();
@@ -43,12 +49,11 @@ var errorCallback = function(e) {
  };
 
 
-navigator.mediaDevices.getUserMedia({audio: true}, function(stream) {
+navigator.getUserMedia({audio: true}, function(stream) {
   var microphone = context.createMediaStreamSource(stream);
 
   // microphone -> filter -> destination.
   microphone.connect(analyser);
-  analyser.connect(context.destination);
 
 }, errorCallback);
 

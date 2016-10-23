@@ -32,21 +32,30 @@ f3.add(params, 'camrotz', 0.0, 1.0);
 f3.add(params, 'world_rot', 10000, 100000);
 
 //Web Audio Stuff//
+/*
 var audio = new Audio();
 audio.src = 'marco.mp3';
 audio.controls = true;
 document.body.appendChild(audio);
+*/
 
 var context = new AudioContext();
 var analyser = context.createAnalyser();
 freqByteData = new Uint8Array(analyser.frequencyBinCount);
-window.addEventListener('load', function(e) {
-  // Our <audio> element will be the audio source.
-  var source = context.createMediaElementSource(audio);
-  source.connect(analyser);
-  analyser.connect(context.destination);
-  audio.play();
-}, false);
+
+var errorCallback = function(e) {
+   console.log('Reeeejected!', e);
+ };
+
+
+navigator.getUserMedia({audio: true}, function(stream) {
+  var microphone = context.createMediaStreamSource(stream);
+
+  // microphone -> filter -> destination.
+  microphone.connect(analyser);
+
+}, errorCallback);
+
 
 //Threejs Scene//
 var container, renderer, scene, camera, mesh, fov = 80;
